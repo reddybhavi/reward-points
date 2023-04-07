@@ -1,0 +1,1 @@
+export const noOfDaysRewards = [90, 15, 30, 60, 120, 150, 180]
