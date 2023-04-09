@@ -4,48 +4,6 @@
 
  }
 
- .txns-table-style {
-   padding: 20px;
-   margin: 20px;
- }
-
- .user-info-area {
-   padding: 20px;
-   margin: 20px;
- }
-
- .rewards-header-area {
-   display: flex;
-   align-items: center;
- }
-
- .header-left-section {
-   display: flex;
-   flex-direction: column;
-
- }
-
- .user-selection,
- .rewards-section,
- .days-selection {
-   margin: 20px;
-   float: left;
- }
-
  .rewards-area {
    color: green;
- }
-
- .user-info-item {
-   display: flex !important;
-   justify-content: flex-start;
- }
-
- .rewards-secton-label {
-   padding-right: 10px;
- }
-
- .customers-rewards-center {
-   margin-top: 30px;
-   min-height: 300px;
  }

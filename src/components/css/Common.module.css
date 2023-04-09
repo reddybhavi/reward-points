@@ -1,0 +1,4 @@
+.userInfoItem {
+    display: flex !important;
+    justify-content: flex-start;
+}

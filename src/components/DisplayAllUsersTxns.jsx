@@ -6,6 +6,7 @@ import DisplayCustomersTable from "../common/DisplayCustomersTable";
 import { noOfDaysRewards } from "../utils/constants";
 import DaysPicker from "../common/DaysPicker";
 import useGetAllCutomersDetailsTxns from "../hooks/useGetAllCutomersDetailsTxns";
+import styles from "./css/AllUsers.module.css";
 
 // Display all users data
 const DisplayAllUsersTxns = () => {
@@ -25,11 +26,11 @@ const DisplayAllUsersTxns = () => {
   };
 
   return (
-    <div className="display-transactions">
+    <div className={styles?.allUsersTab}>
       <div>
         <DaysPicker days={days} onDaysSelect={onDaysSelect} />
       </div>
-      <div className="customers-rewards-center">
+      <div className={styles?.customersRewardsCenter}>
         {loadingCustomer && (
           <Spinner animation="border" role="status">
             <span className="visually-hidden">Loading...</span>
