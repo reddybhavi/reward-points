@@ -50,9 +50,9 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
 ### `Total tests summary`
 
-Test Suites: 16 passed, 16 total
+Test Suites: 17 passed, 17 total
 \
-Tests: 55 passed, 55 total
+Tests: 59 passed, 59 total
 \
 Snapshots: 0 total
 \
