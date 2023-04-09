@@ -1,0 +1,8 @@
+.spinner {
+    display: flex;
+    align-items: center;
+    height: 100px;
+    text-align: center;
+    justify-content: center;
+    margin-top: 30px;
+}

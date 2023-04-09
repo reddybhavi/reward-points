@@ -1,8 +1,9 @@
 import Table from "react-bootstrap/Table";
+import styles from "./css/Table.module.css";
 
 const DisplayCustomersTable = ({ customers, days }) => {
   return (
-    <Table striped bordered hover className="txns-table-style">
+    <Table striped bordered hover className={styles?.txnsTableStyle}>
       <thead>
         <tr>
           <th>CustomerId</th>

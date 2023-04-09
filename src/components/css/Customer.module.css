@@ -1,0 +1,28 @@
+ .rewardsHeaderArea {
+     display: flex;
+     align-items: center;
+ }
+
+ .headerLeftSection {
+     display: flex;
+     flex-direction: column;
+ }
+
+ .userInfoArea {
+     padding: 20px;
+     margin: 20px;
+ }
+
+ .userSelection,
+ .rewardsSection {
+     margin: 20px;
+     float: left;
+ }
+
+ .rewardsSectionLabel {
+     padding-right: 10px;
+ }
+
+ .spinnerArea {
+     margin-left: 30%;
+ }

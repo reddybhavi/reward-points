@@ -1,4 +1,5 @@
 import Table from "react-bootstrap/Table";
+import styles from "./css/Table.module.css";
 
 const TableComponent = ({ txns }) => {
   return (
@@ -6,7 +7,7 @@ const TableComponent = ({ txns }) => {
       striped
       bordered
       hover
-      className="txns-table-style"
+      className={styles?.txnsTableStyle}
       data-testid="table-component"
     >
       <thead>

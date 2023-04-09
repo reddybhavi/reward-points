@@ -3,8 +3,8 @@ import DisplayAllUsersTxns from "./DisplayAllUsersTxns";
 import Tab from "react-bootstrap/Tab";
 import Tabs from "react-bootstrap/Tabs";
 import useGetAllCustomers from "../hooks/useGetAllCustomers";
-import Spinner from "react-bootstrap/Spinner";
 import Container from "react-bootstrap/Container";
+import CommonSpinner from "../common/CommonSpinner";
 
 // Rewards Home page
 // Start of flow
@@ -17,11 +17,7 @@ const RewardsHome = () => {
   return (
     <Container>
       <div data-testid="rewards-home" className="rewards-home">
-        {isAllCustomersLoading && (
-          <Spinner animation="border" role="status">
-            <span className="visually-hidden">Loading...</span>
-          </Spinner>
-        )}
+        {isAllCustomersLoading && <CommonSpinner />}
         <>{isAllCustomersError && <>Error loading customers data</>}</>
         {!isAllCustomersLoading && (
           <Tabs

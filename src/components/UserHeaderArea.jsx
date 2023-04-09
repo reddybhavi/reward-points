@@ -2,8 +2,9 @@ import Dropdown from "react-bootstrap/Dropdown";
 import ButtonGroup from "react-bootstrap/ButtonGroup";
 import DropdownButton from "react-bootstrap/DropdownButton";
 import DisplayUserInfo from "./DisplayUserInfo";
-import Spinner from "react-bootstrap/Spinner";
 import DaysPicker from "../common/DaysPicker";
+import styles from "./css/Customer.module.css";
+import CommonSpinner from "../common/CommonSpinner";
 
 const UserHeaderArea = ({
   allCustomers,
@@ -15,10 +16,12 @@ const UserHeaderArea = ({
   isLoading,
 }) => {
   return (
-    <div className="rewards-header-area">
-      <div className="header-left-section">
-        <div className="user-selection">
-          <label className="rewards-secton-label">Select customer </label>
+    <div className={styles?.rewardsHeaderArea}>
+      <div className={styles?.headerLeftSection}>
+        <div className={styles?.userSelection}>
+          <label className={styles?.rewardsSectionLabel}>
+            Select customer{" "}
+          </label>
           <DropdownButton
             as={ButtonGroup}
             variant="secondary"
@@ -33,14 +36,14 @@ const UserHeaderArea = ({
           </DropdownButton>
         </div>
         <DaysPicker days={days} onDaysSelect={onDaysSelect} />
-        <div className="rewards-section">
+        <div className={styles?.rewardsSection}>
           Reward Points in last {days} days:{" "}
           <span className="reward-points-display">
             {isLoading && <>...</>}
             {!isLoading && <strong>{customerDetails?.partialRewards}</strong>}
           </span>
         </div>
-        <div className="rewards-section">
+        <div className={styles?.rewardsSection}>
           Total Reward Points:{" "}
           <span className="reward-points-display">
             {isLoading && <>...</>}
@@ -49,12 +52,12 @@ const UserHeaderArea = ({
         </div>
       </div>
       {isLoading && (
-        <Spinner animation="border" role="status">
-          <span className="visually-hidden">Loading...</span>
-        </Spinner>
+        <div className={styles?.spinnerArea}>
+          <CommonSpinner />
+        </div>
       )}
       {!isLoading && (
-        <div className="user-info-area">
+        <div className={styles?.userInfoArea}>
           <DisplayUserInfo
             name={customerDetails?.name}
             email={customerDetails?.email}
