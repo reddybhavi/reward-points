@@ -44,8 +44,9 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 6.  All hooks are in hooks folder.
 7.  All common reusable react components are in common folder.
 8.  All utils, data being fetched by services and constants are in Utils folder.
-9.  Function to calculate rewards is in commonUtil(calculateRewardForEachTxn)
-10. All unit tests are in the same folder as of components/ services in folder __tests, Tried to cover as many cases as possible.
+9.  Function to calculate rewards is in commonUtil(calculateRewardForEachTxn).
+10. CSS for files are in the same folder in css folder.
+11. All unit tests are in the same folder as of components/ services in folder __tests, covered most cases I think.
 
 
 ### `Total tests summary`
