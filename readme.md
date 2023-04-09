@@ -18,8 +18,8 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 ### `Thoughts`
 
 - Since this is a simple react so used only react with hooks, As the scope of the project grows we can include a state management library like redux. Also we can include [custom middleware patterns](https://redux.js.org/tutorials/fundamentals/part-4-store#writing-custom-middleware) to have listen to events and dispatch actions/ api calls based on the actions. 
-- Used hooks for making api calls to listen changes on props so that they are reusable.
-- Used timeouts in services to simiulate api calls. In a real scenario case we should paginate all api calls which has scope.
+- Used custom hooks for making api calls to listen changes on props and made sure that they are reusable.
+- Used timeouts in services to simiulate api calls. In a real scenario case we should paginate all api calls which are required (for ex: gettransactions).
 
 
 ### `Summary of the files/project`
