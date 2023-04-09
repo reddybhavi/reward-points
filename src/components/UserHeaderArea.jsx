@@ -51,12 +51,12 @@ const UserHeaderArea = ({
           </span>
         </div>
       </div>
-      {!isLoading && (
+      {isLoading && (
         <div className={styles?.spinnerArea}>
           <CommonSpinner />
         </div>
       )}
-      {isLoading && (
+      {!isLoading && (
         <div className={styles?.userInfoArea}>
           <DisplayUserInfo
             name={customerDetails?.name}
