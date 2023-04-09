@@ -3,7 +3,7 @@ import styles from "./css/Table.module.css";
 
 const DisplayCustomersTable = ({ customers, days }) => {
   return (
-    <Table striped bordered hover className={styles.txnsTableStyle}>
+    <Table striped bordered hover className={styles?.txnsTableStyle}>
       <thead>
         <tr>
           <th>CustomerId</th>

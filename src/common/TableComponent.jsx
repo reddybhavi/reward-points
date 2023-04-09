@@ -7,7 +7,7 @@ const TableComponent = ({ txns }) => {
       striped
       bordered
       hover
-      className={styles.txnsTableStyle}
+      className={styles?.txnsTableStyle}
       data-testid="table-component"
     >
       <thead>

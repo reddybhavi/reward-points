@@ -1,9 +1,9 @@
 import { useState } from "react";
 import { noOfDaysRewards } from "../utils/constants";
 import TableComponent from "../common/TableComponent";
-import Spinner from "react-bootstrap/Spinner";
 import UserHeaderArea from "./UserHeaderArea";
 import useGetCustomerDetailsTxns from "../hooks/useGetCustomerDetailsTxns";
+import CommonSpinner from "../common/CommonSpinner";
 
 const DisplayTransactionsByUser = ({ allCustomers }) => {
   const [selectedCustomer, setSelectedCustomer] = useState(
@@ -35,11 +35,7 @@ const DisplayTransactionsByUser = ({ allCustomers }) => {
         selectedCustomer={selectedCustomer}
         isLoading={isLoading}
       />
-      {isLoading && (
-        <Spinner animation="border" role="status">
-          <span className="visually-hidden">Loading...</span>
-        </Spinner>
-      )}
+      {isLoading && <CommonSpinner />}
       {!isLoading && <TableComponent txns={customerTxns} />}
       {error && <>Error loading details</>}
     </div>

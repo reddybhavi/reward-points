@@ -1,12 +1,11 @@
 import { useState } from "react";
-import Spinner from "react-bootstrap/Spinner";
 import TableComponent from "../common/TableComponent";
-
 import DisplayCustomersTable from "../common/DisplayCustomersTable";
 import { noOfDaysRewards } from "../utils/constants";
 import DaysPicker from "../common/DaysPicker";
 import useGetAllCutomersDetailsTxns from "../hooks/useGetAllCutomersDetailsTxns";
 import styles from "./css/AllUsers.module.css";
+import CommonSpinner from "../common/CommonSpinner";
 
 // Display all users data
 const DisplayAllUsersTxns = () => {
@@ -31,11 +30,7 @@ const DisplayAllUsersTxns = () => {
         <DaysPicker days={days} onDaysSelect={onDaysSelect} />
       </div>
       <div className={styles?.customersRewardsCenter}>
-        {loadingCustomer && (
-          <Spinner animation="border" role="status">
-            <span className="visually-hidden">Loading...</span>
-          </Spinner>
-        )}
+        {loadingCustomer && <CommonSpinner />}
         <div>
           <h4>All rewards by customers</h4>
         </div>

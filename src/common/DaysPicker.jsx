@@ -8,8 +8,8 @@ import styles from "./css/DaysPicker.module.css";
 // Dropdown for picking the number of days to show.
 const DaysPicker = ({ onDaysSelect, days }) => {
   return (
-    <div className={styles.daysSelection}>
-      <label className={styles.rewardsSectionLabel}>
+    <div className={styles?.daysSelection}>
+      <label className={styles?.rewardsSectionLabel}>
         Days data to display{" "}
       </label>
       <DropdownButton

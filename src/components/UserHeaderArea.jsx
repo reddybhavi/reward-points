@@ -2,9 +2,9 @@ import Dropdown from "react-bootstrap/Dropdown";
 import ButtonGroup from "react-bootstrap/ButtonGroup";
 import DropdownButton from "react-bootstrap/DropdownButton";
 import DisplayUserInfo from "./DisplayUserInfo";
-import Spinner from "react-bootstrap/Spinner";
 import DaysPicker from "../common/DaysPicker";
 import styles from "./css/Customer.module.css";
+import CommonSpinner from "../common/CommonSpinner";
 
 const UserHeaderArea = ({
   allCustomers,
@@ -36,14 +36,14 @@ const UserHeaderArea = ({
           </DropdownButton>
         </div>
         <DaysPicker days={days} onDaysSelect={onDaysSelect} />
-        <div className={styles.rewardsSection}>
+        <div className={styles?.rewardsSection}>
           Reward Points in last {days} days:{" "}
           <span className="reward-points-display">
             {isLoading && <>...</>}
             {!isLoading && <strong>{customerDetails?.partialRewards}</strong>}
           </span>
         </div>
-        <div className={styles.rewardsSection}>
+        <div className={styles?.rewardsSection}>
           Total Reward Points:{" "}
           <span className="reward-points-display">
             {isLoading && <>...</>}
@@ -51,13 +51,9 @@ const UserHeaderArea = ({
           </span>
         </div>
       </div>
-      {isLoading && (
-        <Spinner animation="border" role="status">
-          <span className="visually-hidden">Loading...</span>
-        </Spinner>
-      )}
+      {isLoading && <CommonSpinner />}
       {!isLoading && (
-        <div className={styles.userInfoArea}>
+        <div className={styles?.userInfoArea}>
           <DisplayUserInfo
             name={customerDetails?.name}
             email={customerDetails?.email}
