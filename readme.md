@@ -25,7 +25,7 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 ### `Summary of the files/project`
 
 1.  App.js is the root file.
-2.  RewardsHome.js is where the code for tabs lives, It has 2 components
+2.  RewardsHome.js is the start file for code and its where the code for tabs lives, It has 2 components
     \
         DisplayTransactionsByUser
             \
