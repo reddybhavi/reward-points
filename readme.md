@@ -26,8 +26,9 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
 1.  App.js is the root file.
 2.  RewardsHome.js is where the code for tabs lives, It has 2 components
-
+    \
         DisplayTransactionsByUser
+            \
         DisplayAllUsersTxns
 
 3.  DisplayTransactionsByUser
@@ -36,7 +37,7 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
     \
     Contains code for 2 Dropdowns in HeaderArea component and TableComponent to display user data in table.
 4.  DisplayAllUsersTxns
-    \  
+    \
     Uses a custom hook useGetAllCutomersDetailsTxns to Get all customers details and reward points
     \
     Dislays dayspicker and 2 tables for showing customers data.
